@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MD Rafiq Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="overlay overlay-lg">
+          <img src="./img/shapes/square.png" class="shape square" alt="" />
+          <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle1"
+            alt=""
+          />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle2"
+            alt=""
+          />
+          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
+          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
+          <img src="./img/shapes/letters1.png" class="letters" alt="" />
+          <img src="./img/shapes/points1.png" class="points points1" alt="" />
+        </div>
+
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/shapes/logo-blue.png" alt="" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);">Home</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <!-- <li>
+                  <a href="#contact">Contact</a>
+                </li> -->
+                <li>
+                  <a href="#education">Qualification</a>
+                </li>
+                <li>
+                  <a
+                    href="img/Resumeux.pdf"
+                    class="active"
+                    download="MdRafiq.Pdf"
+                    >Download CV</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-content" id="header">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title text-left">MD Rafiq</h1>
+              <p class="text">
+                I'm a UX/UI designer focusing on creating user experiences and
+                design systems for software, web, and mobile products. I'm
+                passionate about applying user psychology for an interaction
+                science-backed approach. Also I Develop Prototypes using
+                Html/css/Bootstrap frameworks and code it to make Responsive.
+              </p>
+              <a
+                href="img/Resumeux.pdf"
+                class="active primary-btn"
+                download="MdRafiq.Pdf"
+                >Download CV</a
+              >
+            </div>
+
+            <div class="slider-container">
+              <div class="section-header">
+                <div class="container">
+                  <div class="image-container">
+                    <img src="./img/colors.png" id="content1" class="active" />
+                    <img src="./img/typography.png" id="content2" />
+                    <img src="./img/sitemap.png" id="content3" />
+                    <img src="./img/mindmap.png" id="content4" />
+                  </div>
+                  <div class="dot-container">
+                    <button onclick="dot(1)"></button>
+                    <button onclick="dot(2)"></button>
+                    <button onclick="dot(3)"></button>
+                    <button onclick="dot(4)"></button>
+                  </div>
+                  <button id="prev" onclick="prev()">&lt;</button>
+                  <button id="next" onclick="next()">&gt;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What I Do">Services</h3>
+            <p class="text">
+              Conducting user research and testing, Developing wireframes and
+              task flows, Collaborating with Designers and Developers
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points1 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./img/design-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">UX Design</h3>
+                  <p class="text">
+                    Wireframing and Prototyping using Adobe XD and Figma
+                  </p>
+                  <!-- <a href="#" class="btn small">Read more</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="Code">
+                <div class="card-content z-index">
+                  <img src="./img/code-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">CSS Development</h3>
+                  <p class="text">
+                    Bring Final Design to Live Using Html, CSS and JS and making
+                    Responsive, Browser comaptibility and Device comaptibility
+                  </p>
+                  <!-- <a href="#" class="btn small">Read more</a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points2 points-sq"
+                alt=""
+              />
+              <div class="card" data-card="App">
+                <div class="card-content z-index">
+                  <img src="./img/email-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Email Developer</h3>
+                  <p class="text">
+                    Coding Emails and testing using Litmus tool and making it
+                    support to work on clients like outlook and other major apps
+                  </p>
+                  <!-- <a href="#" class="btn small">Read more</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="background-bg">
+          <div class="overlay overlay-sm">
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle1"
+              alt=""
+            />
+            <img
+              src="./img/shapes/half-circle.png"
+              class="shape half-circle2"
+              alt=""
+            />
+            <img src="./img/shapes/square.png" class="shape square" alt="" />
+            <img src="./img/shapes/wave.png" class="shape wave" alt="" />
+            <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+            <img
+              src="./img/shapes/triangle.png"
+              class="shape triangle"
+              alt=""
+            />
+            <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="My works">Portfolio</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="filter">
+              <button class="filter-btn active" data-filter="*">All</button>
+              <button class="filter-btn" data-filter=".ui">UI/UX</button>
+              <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+              <button class="filter-btn" data-filter=".appdev">
+                Mobile App
+              </button>
+              <button class="filter-btn" data-filter=".logo-design">
+                Logo Design
+              </button>
+            </div>
+
+            <div class="grid">
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/waybus-desktop.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Waybus Bus Ticketbooking</h3>
+                      <h5>
+                        <a href="https://www.waybus.in" target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/waybus-mob.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Waybus App for Android</h3>
+                      <h5>
+                        <a
+                          href="https://play.google.com/store/apps/details?id=com.waybus"
+                          target="_blank"
+                          >View Screens</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/panera-desktop-min.jpeg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Panera Web App</h3>
+                      <h5>
+                        <a
+                          href="https://www.panerabread.com/en-us/home.html"
+                          target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/paneramob-mockup-min.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Panera Mobile View</h3>
+                      <h5>
+                        <a
+                          href="https://www.panerabread.com/en-us/home.html"
+                          target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/sisgasoft-desktop.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Sisgasoft</h3>
+                      <h5>
+                        <a href="https://www.sisgasoft.com/" target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/sisga-tab.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Sisgasoft Mobile View</h3>
+                      <h5>
+                        <a href="https://www.sisgasoft.com/" target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/taxmate.jpeg" alt="taxmate" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Tax Solutions Webapp</h3>
+                      <h5>
+                        <a href="https://www.taxmate.co/" target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdev ui">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/taxmate-mob.jpg" alt="taxmate" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Taxmate Mobile View</h3>
+                      <h5>
+                        <a href="https://www.taxmate.co/" target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/citi.jpeg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Citi Webap</h3>
+                      <h5>
+                        <a
+                          href="https://www.thankyou.com/cms/thankyou/"
+                          target="_blank"
+                          >View Demo</a
+                        >
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-folio">
+              <a href="#" class="btn">More Folio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Who Am I">About me</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Hello, I'm</h3>
+              <p class="text">
+                Mohammad Rafiq Hussain, i do have 9+ years of Experience into IT
+                and i have supported Clients for creating web app designs and
+                coding them using Html, CSS and also worked on latest frameworks
+                like React/Angular as a CSS Developer making it Device and
+                Browser Comaptibility.
+              </p>
+
+              <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+
+            <div class="column-2">
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">HTML</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="50%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">Adobe Xd / Figma / Photoshop</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education section" id="education">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Qualification">
+              Experience and Education
+            </h3>
+            <section class="my-timeline">
+              <div class="timeline">
+                <ul>
+                  <li>
+                    <div class="content">
+                      <h3>Emids Technologies</h3>
+                      <p>
+                        Emids is a Healthcare Domain, I have Started My Career
+                        as UXP Analyst and i was working as UX Designer and
+                        Developer supporting the backend developers to achieve
+                        and Fix Browser and Device Comaptibility Issues.
+                      </p>
+                    </div>
+                    <div class="time">
+                      <h4>December 2011</h4>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="content">
+                      <h3>Epsilon</h3>
+                      <p>
+                        Epsilon is a Digital Marketing Soltuions, here i Started
+                        working CSS Developer and Email Developer Supporting two
+                        projects which mainly focuses on Claiming Rewards Points
+                        Web App which is developed on Angular .
+                      </p>
+                    </div>
+                    <div class="time">
+                      <h4>February 2018</h4>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content">
+                      <h3>Education</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content">
+                      <h3>MCA</h3>
+                      <p>
+                        Completed Masters in Computer Applicatons in Hyderabad
+                        Jntu.
+                      </p>
+                    </div>
+                    <div class="time">
+                      <h4>July 2009</h4>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="content">
+                      <h3>B.Sc Computer</h3>
+                      <p>
+                        Completed Bachelors in Computer Science in Anantapur,
+                        Andhrapradesh, Sri Krishna Devaraya University.
+                      </p>
+                    </div>
+                    <div class="time">
+                      <h4>April 2006</h4>
+                    </div>
+                  </li>
+                  <div style="clear: both"></div>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h3 class="title">Get in touch</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                rerum odio incidunt doslorum officia dolorem eaque aprim?
+              </p>
+              <div class="information-wrap">
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p class="info-text">92 Cherry Drive Unimodale, NY 11553</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <p class="info-text">lorem@ipsum.com</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p class="info-text">123-456-789</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <h3 class="title">Contact me</h3>
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Last Name"
+                />
+              </div>
+
+              <div class="row">
+                <input type="text" class="contact-input" placeholder="Phone" />
+                <input type="email" class="contact-input" placeholder="Email" />
+              </div>
+
+              <div class="row">
+                <textarea
+                  name="message"
+                  class="contact-input textarea"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <a href="#" class="btn">Send</a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">Let's talk about a project</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            culpa. Commodi suscipit animi officia dignissimos unde, ipsum fugiat
+            consequuntur, fugit ratione vel aperiam, similique distinctio
+            mollitia repellendus quasi rem vero!
+          </p>
+          <a href="#" class="btn">Hire me</a>
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="bottom-footer">
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Follow me</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://dribbble.com/mdrafiq" target="_blank">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/nmdrafiq" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2021 All rights reserved | Created by
+              <span>Rafiq Hussain</span>
+            </p>
+          </div>
+          <div class="image pro-image">
+            <img src="./img/rafiq.png" class="img-element z-index" alt="" />
+          </div>
+          <div class="back-btn-wrap">
+            <a href="#" class="back-btn">
+              <i class="fas fa-chevron-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
